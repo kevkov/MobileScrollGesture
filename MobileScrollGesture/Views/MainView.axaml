@@ -1,0 +1,64 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:MobileScrollGesture.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MobileScrollGesture.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+
+        <DockPanel>
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" DockPanel.Dock="Bottom">
+                <TabStrip SelectionChanged="OnSelectedIndexChanged">
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>1</TextBlock>
+                            <TextBlock>One</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>2</TextBlock>
+                            <TextBlock>Two</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>3</TextBlock>
+                            <TextBlock>Three</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>4</TextBlock>
+                            <TextBlock>Four</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>5</TextBlock>
+                            <TextBlock>Five</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>6</TextBlock>
+                            <TextBlock>Six</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <StackPanel>
+                            <TextBlock>7</TextBlock>
+                            <TextBlock>Seven</TextBlock>
+                        </StackPanel>
+                    </TabStripItem>
+                </TabStrip>
+            </ScrollViewer>
+            <TextBlock Name="Top" DockPanel.Dock="Top"></TextBlock>
+        </DockPanel>
+</UserControl>
