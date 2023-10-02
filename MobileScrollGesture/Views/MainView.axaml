@@ -51,11 +51,7 @@
                             <TextBlock>Six</TextBlock>
                         </StackPanel>
                     </TabStripItem>
-                    <TabStripItem>
-                        <StackPanel>
-                            <TextBlock>7</TextBlock>
-                            <TextBlock>Seven</TextBlock>
-                        </StackPanel>
+                    <TabStripItem >
                     </TabStripItem>
                 </TabStrip>
             </ScrollViewer>
